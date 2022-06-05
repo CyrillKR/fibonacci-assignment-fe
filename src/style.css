@@ -43,7 +43,7 @@ section {
     border: 1px black solid;
 }
 
-article {
+article, form {
     display: flex;
     flex-direction: row;
     align-content: center;
