@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Fibonacci</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <h1>Fibonacci assignment</h1>
+      </header>
+      <div class="loader-container">
+        <h2 class="loader"></h2>
+      </div>
+      <section>
+        <article>
+          <input type="number" id="x-input" />
+          <button type="submit" id="submit-btn">Calculate</button>
+          <input
+            type="checkbox"
+            id="save-results"
+            name="save-results"
+            value="save"
+          />
+          <label for="save-results">Save results?</label>
+        </article>
+        <article>
+          <p class="result-p">
+            The Fibonacci number of <span id="x">x</span> is
+            <span id="y">y</span>
+          </p>
+        </article>
+        <article>
+          <p class="error"></p>
+        </article>
+      </section>
+      <section>
+        <article class="list-options">
+          <div class="sort-container">
+            <label type="sort-type">Sort results</label>
+
+            <select name="sort-type" id="sort-type">
+              <option value="date-desc">Date/ Descending</option>
+              <option value="date-asc">Date/ Ascending</option>
+              <option value="result-desc">Result/ Descending</option>
+              <option value="result-asc">Result/ Ascending</option>
+            </select>
+          </div>
+          <div class="limit-container">
+            <label for="limit-results">Limit results: </label>
+            <input type="number" id="limit-results" name="limit-results" />
+          </div>
+        </article>
+        <article>
+          <ul class="history-list"></ul>
+        </article>
+      </section>
+    </div>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
